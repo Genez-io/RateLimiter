@@ -23,7 +23,7 @@
 
 # What is `@genezio/rate-limiter`
 
-`@genezio/rate-limiter` provides a decorator that should be used in Genezio projects to manage how many requests can be made on a deployed calss in a minute from a certain IP.
+`@genezio/rate-limiter` provides a decorator that should be used in Genezio projects to manage how many requests can be made on a deployed class in a minute from a certain IP.
 
 # Table of Contents
 - [Getting Started](#getting-started)
