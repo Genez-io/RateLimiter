@@ -39,7 +39,7 @@
 
 # Getting Started
 
-## Install `@genezio/types`
+## Install `@genezio/rate-limiter`
 
 To install the `@genezio/rate-limiter` package, you can use npm or yarn:
 
