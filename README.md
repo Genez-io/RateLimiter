@@ -26,17 +26,16 @@
 `@genezio/rate-limiter` provides a decorator that should be used in Genezio projects to manage how many requests can be made on a deployed class in a minute from a certain IP.
 
 # Table of Contents
-- [Getting Started](#getting-started)
-- [Documentation](#documentation)
-- [Getting Support](#getting-support)
-- [System Requirements](#system-requirements)
-- [Troubleshooting](#troubleshooting)
-- [Contributions](#contributions)
-- [Ecosystem](#ecosystem)
-- [Badge](#badge)
-- [License](#license)
 
-
+-   [Getting Started](#getting-started)
+-   [Documentation](#documentation)
+-   [Getting Support](#getting-support)
+-   [System Requirements](#system-requirements)
+-   [Troubleshooting](#troubleshooting)
+-   [Contributions](#contributions)
+-   [Ecosystem](#ecosystem)
+-   [Badge](#badge)
+-   [License](#license)
 
 # Getting Started
 
@@ -51,16 +50,18 @@ npm install @genezio/rate-limiter
 ```bash
 yarn add @genezio/rate-limiter
 ```
+
 # Documentation
-To find more details on how to use `@genezio/rate-limiter`, check out the official [documentation](https://genezio.com/docs/features/backend-deployment/)
+
+To find more details on how to use `@genezio/rate-limiter`, check out the official [documentation](https://genezio.com/docs/features/rate-limiter/)
 
 To find more details on how to use `genezio`, check out the official [documentation](https://genezio.com/docs)
 
-- [Getting started](https://genezio.com/docs/getting-started/)
-- [Project Structure](https://genezio.com/docs/project-structure/)
-- [CLI commands](https://genezio.com/docs/cli-tool/)
-- [Test Interface](https://genezio.com/docs/features/testing)
-- [Integrations](https://genezio.com/docs/integrations/)
+-   [Getting started](https://genezio.com/docs/getting-started/)
+-   [Project Structure](https://genezio.com/docs/project-structure/)
+-   [CLI commands](https://genezio.com/docs/cli-tool/)
+-   [Test Interface](https://genezio.com/docs/features/testing)
+-   [Integrations](https://genezio.com/docs/integrations/)
 
 If you cannot find what you are looking for in the docs, don't hesitate to drop us a [GitHub issue](https://github.com/Genez-io/genezio/issues) or [start a discussion on Discord](https://discord.gg/uc9H5YKjXv).
 

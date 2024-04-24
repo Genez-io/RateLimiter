@@ -1,6 +1,6 @@
 {
     "name": "@genezio/rate-limiter",
-    "version": "0.0.2-dev",
+    "version": "1.0.0",
     "description": "Rate limiter decorator for Genezio applications",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
