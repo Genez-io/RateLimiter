@@ -69,7 +69,7 @@ export function GenezioRateLimiter(_dict: GenezioRateLimiterOptionsParameters = 
             try {
                 const date = new Date();
                 const oldCount = await redisClient.get(
-                    `${args[0].requestContext.http.sourceIp}:${date.getMinutes()}`
+                    `${args[0].requestContext.http.sourceIp}:${_context.name}:${date.getMinutes()}`
                 );
                 // If the limit is reached, throw an error
                 if (oldCount && parseInt(oldCount) >= (_dict.limit ? _dict.limit : 50)) {
@@ -85,9 +85,15 @@ export function GenezioRateLimiter(_dict: GenezioRateLimiterOptionsParameters = 
                 // Increment the count of requests made by the sourceIp in the current minute
                 await redisClient
                     .multi()
-                    .incr(`${args[0].requestContext.http.sourceIp}:${date.getMinutes()}`)
+                    .incr(
+                        `${args[0].requestContext.http.sourceIp}:${
+                            _context.name
+                        }:${date.getMinutes()}`
+                    )
                     .expire(
-                        `${args[0].requestContext.http.sourceIp}:${date.getMinutes()}`,
+                        `${args[0].requestContext.http.sourceIp}:${
+                            _context.name
+                        }:${date.getMinutes()}`,
                         _dict.refreshRate ? _dict.refreshRate : 59
                     )
                     .exec();
